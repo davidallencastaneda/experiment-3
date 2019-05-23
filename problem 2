@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    int A[7];
+    int B[7];
+    int C[7];
+    int a;
+    
+    for (a=1; a<=7; a++)
+    {
+        cout<<"Province A, Day "<<a<< ": ";
+        cin>>A[a];}
+    
+    for(a=1; a<=7; a++)
+    {
+        cout<<"Province B, Day "<<a<<": ";
+        cin>>B[a];}
+    
+    for(a=1; a<=7; a++)
+    {
+        cout<<"Province C, Day "<<a<<": ";
+        cin>>C[a];}
+    
+    cout<<endl;
+    
+    for(a=1; a<=7; a++)
+    {
+        cout<<"Province A, Day "<<a<< " = "<<A[a]<<endl;}
+    
+    for(a=1; a<=7; a++)
+    {
+        cout<<"Province B, Day "<<a<<" = "<<B[a]<<endl;}
+    
+    for (a=1; a<=7; a++)
+    {
+        cout<<"Province C, Day "<<a<<" = "<<C[a]<<endl;}
+    
+    return 0;
+}
