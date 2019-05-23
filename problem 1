@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    int n[10];
+    int index;
+    int sum;
+    int ave;
+    int maxIndex;
+    int largest;
+    int smallest;
+    
+    cout<<"Enter 10 integers: "<<endl;
+    
+    for(index=0; index<10; index++)
+        n[index]=0;
+    for(index=0; index<10; index++)
+        cin>>n[index];
+    
+    sum=0;
+    
+    for (index=0; index<10; index++)
+        sum = sum + n[index];
+    
+    ave = sum/10;
+
+    maxIndex = 0;
+    for (index=1; index<10; index++)
+        if (n[maxIndex] < n[index])
+            maxIndex=index;
+    largest = n[maxIndex];
+    
+    for (index=1; index<10; index++)
+        if (n[maxIndex] > n[index])
+            maxIndex = index;
+    smallest = n[maxIndex];
+    
+    cout<<endl;
+				
+    cout<<"This is the smallest integer : "<< smallest<<endl;
+    cout<<"This is the largest integer : "<<largest<<endl;
+    cout<<"This is the sum total of the integers: "<<sum<<endl;
+    cout<<"This is the average of the integers: "<<ave<<endl;
+    
+    cout<<endl;
+    
+    return 0;
+}
